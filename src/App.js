@@ -4,9 +4,12 @@ import { pass } from "./actions/";
 import "./css/App.css";
 import { Wisielec } from './Wisielec';
 import { Litery } from './Litery';
+import * as proverbs from './json/proverbs.json';
 
 export class App extends Component {
-  
+  componentDidMount(){
+    console.log(Math.floor(Math.random() + 1) * proverbs.length )
+  }
 
   render() {
     return (
