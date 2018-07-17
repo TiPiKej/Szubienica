@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "../sass/App.css",
+	"sources": [
+		"../sass/App.sass",
+		"../sass/partials/_basic.sass"
+	],
+	"sourcesContent": [
+		"@import \"partials/basic\";\n",
+		"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-size: 30px;\n\tfont-family: 'Open Sans', sans-serif; }\n"
+	],
+	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,UAAW;EACvB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,uBAAwB;CAAG",
+	"names": []
+}

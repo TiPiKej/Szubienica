@@ -1,0 +1,37 @@
+=prefix($property, $value, $vendors: webkit moz ms o) 
+  @if $vendors 
+    @each $vendor in $vendors 
+      #{"-" + $vendor + "-" + $property}: #{$value}
+  #{$property}: #{$value}
+
+
+=keyframes( $animationName )
+  @-webkit-keyframes #{$animationName} 
+    @content
+
+  @-moz-keyframes #{$animationName} 
+    @content
+
+  @-o-keyframes #{$animationName} 
+    @content
+
+  @keyframes #{$animationName} 
+    @content
+
+=animation($name, $speed, $form, $iteration: 1)
+  +prefix(animation, $name $speed $form $iteration)
+
+=filter($name)
+  +prefix(filter, $name)
+
+=text-shadow($offset-x, $offset-y, $blur-radius, $color)
+  +prefix(text-shadow, $offset-x $offset-y $blur-radius $color)
+
+=user-select($value)
+  +prefix(user-select, $value)
+
+=box-shadow($horizontalLength, $verticalLength, $blurRadius, $spreadRadius, $shadowColor)
+    +prefix(box-shadow, $horizontalLength $verticalLength $blurRadius $spreadRadius $shadowColor)
+
+=transition($args...)
+  +prefix(transition, $args)
