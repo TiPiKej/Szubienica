@@ -7,4 +7,62 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+/* line 8, C:/strony/react/reactGames/Szubienica/src/sass/partials/_basic.sass */
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+/* line 6, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* line 15, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec .proverb {
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+/* line 19, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec .keyboard {
+  width: 450px;
+  display: grid;
+  grid-template-columns: repeat(6, 16.6%);
+}
+
+/* line 24, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec .keyboard button {
+  border-radius: 100%;
+  margin: 2px 5px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #64b5f6;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 35, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec .keyboard button:hover {
+  background: #1a237e;
+  color: #fff;
+}
+
+/* line 39, C:/strony/react/reactGames/Szubienica/src/sass/App.sass */
+.Wisielec .keyboard button:nth-child(31) {
+  grid-column-start: 3;
+}
+
 /*# sourceMappingURL=../css/App.map */

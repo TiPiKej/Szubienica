@@ -3,12 +3,16 @@
 	"file": "../sass/App.css",
 	"sources": [
 		"../sass/App.sass",
-		"../sass/partials/_basic.sass"
+		"../sass/partials/_basic.sass",
+		"../sass/partials/_variables.sass",
+		"../sass/partials/_mixin.sass"
 	],
 	"sourcesContent": [
-		"@import \"partials/basic\";\n",
-		"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-size: 30px;\n\tfont-family: 'Open Sans', sans-serif; }\n"
+		"@import \"partials/basic\";\n@import \"partials/variables\";\n@import \"partials/mixin\";\n\n\n.Wisielec {\n\twidth: 100vw;\n\theight: 100vh;\n\tdisplay: flex;\n\tjustify-content: flex-start;\n\talign-items: center;\n\tflex-direction: column;\n\tpadding: 20px;\n\n\t.proverb {\n\t\tmargin: 10px;\n\t\tletter-spacing: 2px; }\n\n\t.keyboard {\n\t\twidth: 450px;\n\t\tdisplay: grid;\n\t\tgrid-template-columns: repeat(6, 16.6%);\n\n\t\tbutton {\n\t\t\tborder-radius: 100%;\n\t\t\tmargin: 2px 5px;\n\t\t\theight: 60px;\n\t\t\twidth: 60px;\n\t\t\tborder: none;\n\t\t\toutline: none;\n\t\t\tcursor: pointer;\n\t\t\tbackground: $primary;\n\t\t\tposition: relative;\n\t\t\t@include transition(all 0.5s ease);\n\t\t\t&:hover {\n\t\t\t\tbackground: $borders;\n\t\t\t\tcolor: #fff; }\n\n\t\t\t&:nth-child(31) {\n\t\t\t\tgrid-column-start: 3; } } } }\n",
+		"* {\n\tmargin: 0;\n\tpadding: 0;\n\tbox-sizing: border-box;\n\tfont-size: 30px;\n\tfont-family: 'Open Sans', sans-serif; }\n\n*::before, *::after {\n\tbox-sizing: border-box; }\n",
+		"$primary: #64b5f6;\n$secondary: #ffa000;\n\n$borders: #1a237e;\n",
+		"@mixin prefix($property, $value, $vendors: webkit moz ms o) {\n  @if $vendors {\n    @each $vendor in $vendors {\n      #{\"-\" + $vendor + \"-\" + $property}: #{$value}; } }\n  #{$property}: #{$value}; }\n\n\n@mixin keyframes( $animationName ) {\n  @-webkit-keyframes #{$animationName} {\n    @content; }\n\n  @-moz-keyframes #{$animationName} {\n    @content; }\n\n  @-o-keyframes #{$animationName} {\n    @content; }\n\n  @keyframes #{$animationName} {\n    @content; } }\n\n@mixin animation($name, $speed, $form, $iteration: 1) {\n  @include prefix(animation, $name $speed $form $iteration); }\n\n@mixin filter($name) {\n  @include prefix(filter, $name); }\n\n@mixin text-shadow($offset-x, $offset-y, $blur-radius, $color) {\n  @include prefix(text-shadow, $offset-x $offset-y $blur-radius $color); }\n\n@mixin user-select($value) {\n  @include prefix(user-select, $value); }\n\n@mixin box-shadow($horizontalLength, $verticalLength, $blurRadius, $spreadRadius, $shadowColor) {\n  @include prefix(box-shadow, $horizontalLength $verticalLength $blurRadius $spreadRadius $shadowColor); }\n\n@mixin transition($args...) {\n  @include prefix(transition, $args); }\n"
 	],
-	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,UAAW;EACvB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,uBAAwB;CAAG",
+	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACD,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,UAAU,EAAE,UAAW;EACvB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,uBAAwB;CAAG;;;AAEzC,AAAC,CAAA,AAAA,QAAQ,EAAE,AAAC,CAAA,AAAA,OAAO,CAAC;EACnB,UAAU,EAAE,UAAW;CAAG;;;ADH3B,AAAA,SAAS,CAAC;EACT,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;EACd,OAAO,EAAE,IAAK;EACd,eAAe,EAAE,UAAW;EAC5B,WAAW,EAAE,MAAO;EACpB,cAAc,EAAE,MAAO;EACvB,OAAO,EAAE,IAAK;CA2BmB;;;AAlClC,AASC,SATQ,CASR,QAAQ,CAAC;EACR,MAAM,EAAE,IAAK;EACb,cAAc,EAAE,GAAI;CAAG;;;AAXzB,AAaC,SAbQ,CAaR,SAAS,CAAC;EACT,KAAK,EAAE,KAAM;EACb,OAAO,EAAE,IAAK;EACd,qBAAqB,EAAE,gBAAM;CAkBC;;;AAlChC,AAkBE,SAlBO,CAaR,SAAS,CAKR,MAAM,CAAC;EACN,aAAa,EAAE,IAAK;EACpB,MAAM,EAAE,OAAQ;EAChB,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;EACb,OAAO,EAAE,IAAK;EACd,MAAM,EAAE,OAAQ;EAChB,UAAU,EE/BH,OAAO;EFgCd,QAAQ,EAAE,QAAS;EG7BhB,kBAAkC,EAAC,aAAC;EAApC,eAAkC,EAAC,aAAC;EAApC,cAAkC,EAAC,aAAC;EAApC,aAAkC,EAAC,aAAC;EACxC,UAAY,EAAC,aAAC;CHmCc;;;AAlC9B,AAkBE,SAlBO,CAaR,SAAS,CAKR,MAAM,AAWJ,MAAM,CAAC;EACP,UAAU,EEhCJ,OAAO;EFiCb,KAAK,EAAE,IAAK;CAAG;;;AA/BnB,AAkBE,SAlBO,CAaR,SAAS,CAKR,MAAM,AAeJ,UAAW,CAAA,AAAA,EAAE,EAAE;EACf,iBAAiB,EAAE,CAAE;CAAG",
 	"names": []
 }

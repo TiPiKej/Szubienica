@@ -19,7 +19,6 @@ class ProverbClass extends Component{
 	}
 
 	componentWillReceiveProps(newProps){
-		console.log(newProps)
 		// set new letters to array 
 
 		let letters = this.state.letters.slice();

@@ -1,1 +1,40 @@
 @import partials/basic
+@import partials/variables
+@import partials/mixin
+
+
+.Wisielec
+	width: 100vw
+	height: 100vh
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	flex-direction: column
+	padding: 20px
+
+	.proverb
+		margin: 10px
+		letter-spacing: 2px
+
+	.keyboard
+		width: 450px
+		display: grid
+		grid-template-columns: repeat(6, 16.6%)
+
+		button
+			border-radius: 100%
+			margin: 2px 5px
+			height: 60px
+			width: 60px
+			border: none
+			outline: none
+			cursor: pointer
+			background: $primary
+			position: relative
+			+transition(all 0.5s ease)
+			&:hover
+				background: $borders
+				color: #fff
+
+			&:nth-child(31)
+				grid-column-start: 3
