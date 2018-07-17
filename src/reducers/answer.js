@@ -1,9 +1,7 @@
-export const answer = (state = [], action) => {
+export const answer = (state = 0, action) => {
 	switch(action.type){
-		case false:
-			return action.answer
-		case true:
-			return action.answer
+		case "MAKE_MISTAKE":
+			return state + 1
 		default: 
 			return state
 	}
