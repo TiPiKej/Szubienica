@@ -25,7 +25,7 @@ class ProverbClass extends Component{
 		// set new letters to array 
 
 		let letters = this.state.letters.slice();
-		letters.push(newProps.lastLetter)
+		letters.push(newProps.lastLetter);
 		this.setState({letters});
 
 
