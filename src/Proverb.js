@@ -19,7 +19,6 @@ class ProverbClass extends Component{
     this.props.randomProverb(proverbs[randNumber]);
 
     this.setState({randNumber: randNumber + 1})
-    console.log(proverbs[randNumber])
 	}
 
 	componentWillReceiveProps(newProps){
