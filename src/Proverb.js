@@ -6,7 +6,8 @@ import * as proverbs from './json/proverbs.json';
 class ProverbClass extends Component{
 	state = {
 		letters: [],
-		proverb: "Loading..."
+		proverb: "Loading...",
+		randNumber: 0
 	}
 
 	componentDidMount(){
@@ -16,6 +17,9 @@ class ProverbClass extends Component{
         if(randNumber === proverbs.length) randNumber -= 1;
 
     this.props.randomProverb(proverbs[randNumber]);
+
+    this.setState({randNumber: randNumber + 1})
+    console.log(proverbs[randNumber])
 	}
 
 	componentWillReceiveProps(newProps){
@@ -41,6 +45,7 @@ class ProverbClass extends Component{
 					isLetter = true;
 
 					// checking for possibly mistake
+
 					if(letters.length - 1 === nr) mistake = false;
 				}
 			})
@@ -70,13 +75,25 @@ class ProverbClass extends Component{
 		this.setState({proverb})
 
 		// calling to image
-		if(mistake) this.props.countMistakes();
+		if(mistake && !this.state.win) this.props.countMistakes();
 	}
 
 	render(){
 		return(
-			<div className="proverb">
-				{this.state.proverb}
+			<div>
+				<div className="proverb">
+					{this.state.proverb}
+					<sup>#{this.state.randNumber}</sup>
+				</div>
+				<div className="letters">
+					{this.state.letters.length > 1?(<div>Wpisane litery:</div>):null}
+					<div>
+						{this.state.letters.map((el, nr) => {
+							if(nr === 0 || nr === 1) return <span key={el + nr}>{el}</span>
+							else return <span key={el + nr}>, {el}</span>
+						})}
+					</div>
+				</div>
 			</div>
 		);
 	}

@@ -5,7 +5,7 @@ import { makeAnswer } from './actions/';
 export class KeyboardClass extends Component{
 	state = {
 		wrap: null,
-		limit: 10
+		limit: 12
 	}
 
 	componentDidMount(){
