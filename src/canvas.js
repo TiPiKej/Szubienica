@@ -13,6 +13,7 @@ export const Canvas = (randomNumber, {win}, mistakes) => {
 	}else{
 		switch(mistakes){
 			case 1: // drawing first footing
+				context.clearRect(0, 0, 400, 300);
 				context.moveTo(130, 220);
 				context.lineTo(106, 251); // -24px 31px
 				context.stroke();
@@ -74,6 +75,8 @@ export const Canvas = (randomNumber, {win}, mistakes) => {
 				break;
 			default: // cleaning canvas
 				context.clearRect(0, 0, 400, 300);
+				context.font = 'italic 40pt Calibri';
+				context.fillText('Gra szubienica!', 40, 175); // 250px - word width
 				break;
 		}
 	}
