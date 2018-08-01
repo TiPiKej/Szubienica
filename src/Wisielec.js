@@ -5,11 +5,18 @@ import { Canvas } from './canvas';
 
 class WisielecClass extends Component{
 	state = {
-		randomNumber: Math.floor( Math.random() * 100000 )
+		randomNumber: Math.floor( Math.random() * 100000 ),
+		proverb: ''
 	}
 
 	componentWillReceiveProps(newProps){
-		Canvas(this.state.randomNumber, newProps, this.props.mistakes)
+		if(newProps.proverb !== this.state.proverb) this.setState({proverb: newProps.proverb})
+
+		if(
+			newProps.randomNumber !== this.state.randomNumber ||
+			newProps.proverb !== this.state.proverb
+			) Canvas(this.state.randomNumber, newProps, this.props.mistakes, this.props.proverb)
+
 	}
 
 	render(){
