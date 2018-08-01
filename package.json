@@ -1,7 +1,7 @@
 {
   "name": "szubienica",
   "version": "0.3.0",
-  "homepage": "https://tipikej.github.io/szubienica",
+  "homepage": "https://tipikej.github.io/Szubienica",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.2.0",
