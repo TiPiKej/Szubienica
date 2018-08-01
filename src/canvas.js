@@ -1,4 +1,4 @@
-export const Canvas = (randomNumber, {win}, mistakes) => {
+export const Canvas = (randomNumber, {win}, mistakes, proverb = '') => {
 	const canvas = document.querySelector(`.canvas${randomNumber}`);
 	const context = canvas.getContext('2d')
 				context.lineWidth = 3;
@@ -70,7 +70,13 @@ export const Canvas = (randomNumber, {win}, mistakes) => {
 				canvas.style.background = "#e53935";
 				context.font = 'italic 40pt Calibri';
 				context.fillText('Przegrałeś!', 75, 290); // 250px - word width
-				console.log(this.props.proverb)
+				
+
+				const proverbsText = document.querySelectorAll('.proverb');
+
+				Array.from(proverbsText).forEach(el => el.firstChild.textContent = proverb);
+
+
 				break;
 			default: // cleaning canvas
 				context.clearRect(0, 0, 400, 300);
