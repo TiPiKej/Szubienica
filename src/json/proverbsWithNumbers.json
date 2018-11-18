@@ -1,0 +1,482 @@
+[
+  {
+    "proverb": "Apetyt rośnie w miarę jedzenia",
+    "nr": 1
+  },
+  {
+    "proverb": "Bez pracy nie ma kołaczy",
+    "nr": 2
+  },
+  {
+    "proverb": "Biednemu zawsze wiatr w oczy",
+    "nr": 3
+  },
+  {
+    "proverb": "Być kulą u nogi",
+    "nr": 4
+  },
+  {
+    "proverb": "Być pracowitym jak pszczoła",
+    "nr": 5
+  },
+  {
+    "proverb": "Cisza jak makiem zasiał",
+    "nr": 6
+  },
+  {
+    "proverb": "Co cię nie zabije, to cię wzmocni",
+    "nr": 7
+  },
+  {
+    "proverb": "Co dwie głowy, to nie jedna",
+    "nr": 8
+  },
+  {
+    "proverb": "Co kraj, to obyczaj",
+    "nr": 9
+  },
+  {
+    "proverb": "Co ma wisieć, nie utonie",
+    "nr": 10
+  },
+  {
+    "proverb": "Co ma piernik do wiatraka",
+    "nr": 11
+  },
+  {
+    "proverb": "Co się odwlecze to nie uciecze",
+    "nr": 12
+  },
+  {
+    "proverb": "Co z oczu, to z serca",
+    "nr": 13
+  },
+  {
+    "proverb": "Co za dużo to niezdrowo",
+    "nr": 14
+  },
+  {
+    "proverb": "Czego Jaś się nie nauczy, tego Jan nie będzie umiał",
+    "nr": 15
+  },
+  {
+    "proverb": "Czuć się jak ryba w wodzie",
+    "nr": 16
+  },
+  {
+    "proverb": "Czym chata bogata tym gościom rada",
+    "nr": 17
+  },
+  {
+    "proverb": "Darowanemu koniowi w zęby się nie zagląda",
+    "nr": 18
+  },
+  {
+    "proverb": "Dla chcącego nic trudnego",
+    "nr": 19
+  },
+  {
+    "proverb": "Do wesela się zagoi",
+    "nr": 20
+  },
+  {
+    "proverb": "Drzeć z kimś koty",
+    "nr": 21
+  },
+  {
+    "proverb": "Dzieci i ryby głosu nie mają",
+    "nr": 22
+  },
+  {
+    "proverb": "Gdy kota nie ma, myszy harcują",
+    "nr": 23
+  },
+  {
+    "proverb": "Gdy się człowiek spieszy, to się diabeł cieszy",
+    "nr": 24
+  },
+  {
+    "proverb": "Gdzie kucharek sześć, tam nie ma co jeść",
+    "nr": 25
+  },
+  {
+    "proverb": "Głupi ma zawsze szczęście",
+    "nr": 26
+  },
+  {
+    "proverb": "Gość w dom  Bóg w dom",
+    "nr": 27
+  },
+  {
+    "proverb": "Grosz do grosza, a będzie kokosza",
+    "nr": 28
+  },
+  {
+    "proverb": "Hulaj dusza, piekła nie ma",
+    "nr": 29
+  },
+  {
+    "proverb": "Idzie luty podkuj buty",
+    "nr": 30
+  },
+  {
+    "proverb": "Jajko mądrzejsze od kury",
+    "nr": 31
+  },
+  {
+    "proverb": "Jaka praca, taka płaca",
+    "nr": 32
+  },
+  {
+    "proverb": "Jak cię widzą, tak cię piszą",
+    "nr": 33
+  },
+  {
+    "proverb": "Jak kamień w wodę",
+    "nr": 34
+  },
+  {
+    "proverb": "Jak Kuba Bogu, tak Bóg Kubie",
+    "nr": 35
+  },
+  {
+    "proverb": "Jak pies je, to nie szczeka bo mu miska ucieka",
+    "nr": 36
+  },
+  {
+    "proverb": "Jak się nie ma co się lubi, to się lubi co się ma",
+    "nr": 37
+  },
+  {
+    "proverb": "Jak sobie pościelesz, tak się wyśpisz",
+    "nr": 38
+  },
+  {
+    "proverb": "Jak trwoga, to do Boga",
+    "nr": 39
+  },
+  {
+    "proverb": "Jedna jaskółka wiosny nie czyni",
+    "nr": 40
+  },
+  {
+    "proverb": "Każdy jest kowalem swego losu",
+    "nr": 41
+  },
+  {
+    "proverb": "Kląć jak szewc",
+    "nr": 42
+  },
+  {
+    "proverb": "Kłamstwo ma krótkie nogi",
+    "nr": 43
+  },
+  {
+    "proverb": "Kogut myślał o niedzieli, a w sobotę łeb ucięli",
+    "nr": 44
+  },
+  {
+    "proverb": "Komu w drogę, temu czas",
+    "nr": 45
+  },
+  {
+    "proverb": "Kto pierwszy ten lepszy",
+    "nr": 46
+  },
+  {
+    "proverb": "Kto pod kim dołki kopie, ten sam w nie wpada",
+    "nr": 47
+  },
+  {
+    "proverb": "Kto pyta, nie błądzi",
+    "nr": 48
+  },
+  {
+    "proverb": "Kto rano wstaje, temu Pan Bóg daje",
+    "nr": 49
+  },
+  {
+    "proverb": "Kto się czubi, ten się lubi",
+    "nr": 50
+  },
+  {
+    "proverb": "Kuj żelazo póki gorące",
+    "nr": 51
+  },
+  {
+    "proverb": "Kwiecień plecień, co przeplata, trochę zimy, trochę lata",
+    "nr": 52
+  },
+  {
+    "proverb": "Leje jak z cebra",
+    "nr": 53
+  },
+  {
+    "proverb": "Lepiej nosić, jak się prosić",
+    "nr": 54
+  },
+  {
+    "proverb": "Lepsza byle jaka prawda, niż dobre kłamstwo",
+    "nr": 55
+  },
+  {
+    "proverb": "Lepszy rydz niż nic",
+    "nr": 56
+  },
+  {
+    "proverb": "Licho nie śpi",
+    "nr": 57
+  },
+  {
+    "proverb": "Lepszy wróbel w garści niż gołąb na dachu",
+    "nr": 58
+  },
+  {
+    "proverb": "Ładnemu we wszystkim ładnie",
+    "nr": 59
+  },
+  {
+    "proverb": "Łatwo przyszło – łatwo poszło",
+    "nr": 60
+  },
+  {
+    "proverb": "Małe dzieci  mały kłopot, duże dzieci  duży kłopot",
+    "nr": 61
+  },
+  {
+    "proverb": "Masz babo placek",
+    "nr": 62
+  },
+  {
+    "proverb": "Miłego złe początki",
+    "nr": 63
+  },
+  {
+    "proverb": "Mądry Polak po szkodzie",
+    "nr": 64
+  },
+  {
+    "proverb": "Mowa jest srebrem, a milczenie złotem",
+    "nr": 65
+  },
+  {
+    "proverb": "Mówił dziad do obrazu, a ten do niego ani razu",
+    "nr": 66
+  },
+  {
+    "proverb": "Nadzieja  matką głupich",
+    "nr": 67
+  },
+  {
+    "proverb": "Ni prośbą, ni groźbą",
+    "nr": 68
+  },
+  {
+    "proverb": "Ni z gruszki, ni z pietruszki",
+    "nr": 69
+  },
+  {
+    "proverb": "Nie bądź w gorącej wodzie kąpany",
+    "nr": 70
+  },
+  {
+    "proverb": "Nie chce góra przyjść do Mahometa, musi Mahomet przyjść do góry",
+    "nr": 71
+  },
+  {
+    "proverb": "Nie chwal dnia przed zachodem słońca",
+    "nr": 72
+  },
+  {
+    "proverb": "Nie czas żałować róż, gdy płoną lasy",
+    "nr": 73
+  },
+  {
+    "proverb": "Nie dziel skóry na niedźwiedziu",
+    "nr": 74
+  },
+  {
+    "proverb": "Nie dolewaj oliwy do ognia",
+    "nr": 75
+  },
+  {
+    "proverb": "Nie kupuj kota w worku",
+    "nr": 76
+  },
+  {
+    "proverb": "Nie ma dymu bez ognia",
+    "nr": 77
+  },
+  {
+    "proverb": "Nie ma to, jak we własnym domu",
+    "nr": 78
+  },
+  {
+    "proverb": "Nie ma tego złego, co by na dobre nie wyszło",
+    "nr": 79
+  },
+  {
+    "proverb": "Nie mów hop, póki nie przeskoczysz",
+    "nr": 80
+  },
+  {
+    "proverb": "Nie mów drugiemu, co tobie nie miłe",
+    "nr": 81
+  },
+  {
+    "proverb": "Nieszczęścia chodzą parami",
+    "nr": 82
+  },
+  {
+    "proverb": "Nie płacz nad rozlanym mlekiem",
+    "nr": 83
+  },
+  {
+    "proverb": "Nie wchodzi się dwa razy do tej samej rzeki",
+    "nr": 84
+  },
+  {
+    "proverb": "Nie wszystko złoto, co się świeci",
+    "nr": 85
+  },
+  {
+    "proverb": "Nie wywołuj wilka z lasu",
+    "nr": 86
+  },
+  {
+    "proverb": "Nudy na pudy",
+    "nr": 87
+  },
+  {
+    "proverb": "Od przybytku głowa nie boli",
+    "nr": 88
+  },
+  {
+    "proverb": "Paluszek i główka to szkolna wymówka",
+    "nr": 89
+  },
+  {
+    "proverb": "Pasuje jak wół do karety",
+    "nr": 90
+  },
+  {
+    "proverb": "Pieniądze szczęścia nie dają",
+    "nr": 91
+  },
+  {
+    "proverb": "Pierwsze koty za płoty",
+    "nr": 92
+  },
+  {
+    "proverb": "Pod latarnią najciemniej",
+    "nr": 93
+  },
+  {
+    "proverb": "Prawda w oczy kole",
+    "nr": 94
+  },
+  {
+    "proverb": "Przyszła koza do woza",
+    "nr": 95
+  },
+  {
+    "proverb": "Przyszła kryska na Matyska",
+    "nr": 96
+  },
+  {
+    "proverb": "Raz na wozie, raz pod wozem",
+    "nr": 97
+  },
+  {
+    "proverb": "Stara miłość nie rdzewieje",
+    "nr": 98
+  },
+  {
+    "proverb": "Starość nie radość, młodość nie wieczność",
+    "nr": 99
+  },
+  {
+    "proverb": "Stary, ale jary",
+    "nr": 100
+  },
+  {
+    "proverb": "Strach ma wielkie oczy",
+    "nr": 101
+  },
+  {
+    "proverb": "Strzeżonego Pan Bóg strzeże",
+    "nr": 102
+  },
+  {
+    "proverb": "Szewc bez butów chodzi",
+    "nr": 103
+  },
+  {
+    "proverb": "Szukajcie, a znajdziecie",
+    "nr": 104
+  },
+  {
+    "proverb": "Szukać igły w stogu siana",
+    "nr": 105
+  },
+  {
+    "proverb": "Ten się śmieje, kto się śmieje ostatni",
+    "nr": 106
+  },
+  {
+    "proverb": "Trafiła kosa na kamień",
+    "nr": 107
+  },
+  {
+    "proverb": "Trafić z deszczu pod rynnę",
+    "nr": 108
+  },
+  {
+    "proverb": "W marcu jak w garncu",
+    "nr": 109
+  },
+  {
+    "proverb": "Wszystko, co dobre, szybko się kończy",
+    "nr": 110
+  },
+  {
+    "proverb": "Wybiera się, jak sójka za morze",
+    "nr": 111
+  },
+  {
+    "proverb": "Wystroił się jak stróż w Boże ciało",
+    "nr": 112
+  },
+  {
+    "proverb": "Wyśpisz się po śmierci",
+    "nr": 113
+  },
+  {
+    "proverb": "Wyszło szydło z worka",
+    "nr": 114
+  },
+  {
+    "proverb": "W zdrowym ciele zdrowy duch",
+    "nr": 115
+  },
+  {
+    "proverb": "Zapomniał wół, jak cielęciem był",
+    "nr": 116
+  },
+  {
+    "proverb": "Zgoda buduje, niezgoda rujnuje",
+    "nr": 117
+  },
+  {
+    "proverb": "Złego diabli nie biorą",
+    "nr": 118
+  },
+  {
+    "proverb": "Z pustego i Salomon nie naleje",
+    "nr": 119
+  },
+  {
+    "proverb": "Żeby kózka nie skakała, to by nóżki nie złamał",
+    "nr": 120
+  }
+]

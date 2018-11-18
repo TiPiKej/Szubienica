@@ -1,32 +1,32 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { countMistakes, winner, randomProverb } from "./actions/";
-import * as proverbs from './json/proverbs.json';
+import proverbs from './json/proverbs.json';
 
-class ProverbClass extends Component{
+class ProverbClass extends Component {
 	state = {
 		letters: [],
 		proverb: "Loading...",
 		randNumber: 0
 	}
 
-	componentDidMount(){
+	componentDidMount() {
 		// random proverb
 
 		let randNumber = Math.floor(Math.random() * proverbs.length);
-        if(randNumber === proverbs.length) randNumber -= 1;
+		if (randNumber === proverbs.length) randNumber -= 1;
 
-    this.props.randomProverb(proverbs[randNumber]);
+		this.props.randomProverb(proverbs[randNumber]);
 
-    this.setState({randNumber: randNumber + 1})
+		this.setState({ randNumber: randNumber + 1 })
 	}
 
-	componentWillReceiveProps(newProps){
+	componentWillReceiveProps(newProps) {
 		// set new letters to array 
 
 		let letters = this.state.letters.slice();
 		letters.push(newProps.lastLetter);
-		this.setState({letters});
+		this.setState({ letters });
 
 
 		// make secret letters
@@ -40,55 +40,55 @@ class ProverbClass extends Component{
 
 			let isLetter = false;
 			Array.from(letters).forEach((letter, nr) => {
-				if(letter.toLowerCase() === el.toLowerCase()){
+				if (letter.toLowerCase() === el.toLowerCase()) {
 					isLetter = true;
 
 					// checking for possibly mistake
 
-					if(letters.length - 1 === nr) mistake = false;
+					if (letters.length - 1 === nr) mistake = false;
 				}
 			})
 
 
 			// make swap to proverb letters
 
-			proverb += isLetter?(el):(
-					el.toLowerCase() === " " || el.toLowerCase() === ","?(
-						el.toLowerCase()
-					):(
+			proverb += isLetter ? (el) : (
+				el.toLowerCase() === " " || el.toLowerCase() === "," ? (
+					el.toLowerCase()
+				) : (
 						"-"
 					)
-				);
+			);
 
 
 			// adding number to variable(this is checking for win)
 
-			if(isLetter || el.toLowerCase() === " " || el.toLowerCase() === ",") countOfGuessLetters += 1;
+			if (isLetter || el.toLowerCase() === " " || el.toLowerCase() === ",") countOfGuessLetters += 1;
 		})
-		
+
 		// checking for possibly win
 
-		if((countOfGuessLetters === newProps.proverb.length) && (this.props.win.length === 0)) this.props.winner();
+		if ((countOfGuessLetters === newProps.proverb.length) && (this.props.win.length === 0)) this.props.winner();
 
 		// setting proverb
-		this.setState({proverb})
+		this.setState({ proverb })
 
 		// calling to image
-		if(mistake && !this.state.win) this.props.countMistakes();
+		if (mistake && !this.state.win) this.props.countMistakes();
 	}
 
-	render(){
-		return(
+	render() {
+		return (
 			<div>
 				<div className="proverb">
 					{this.state.proverb}
 					<sup>#{this.state.randNumber}</sup>
 				</div>
 				<div className="letters">
-					{this.state.letters.length > 1?(<div>Wpisane litery:</div>):null}
+					{this.state.letters.length > 1 ? (<div>Wpisane litery:</div>) : null}
 					<div>
 						{this.state.letters.map((el, nr) => {
-							if(nr === 0 || nr === 1) return <span key={el + nr}>{el}</span>
+							if (nr === 0 || nr === 1) return <span key={el + nr}>{el}</span>
 							else return <span key={el + nr}>, {el}</span>
 						})}
 					</div>
@@ -99,11 +99,11 @@ class ProverbClass extends Component{
 }
 
 const mapStateToProps = (state) => {
-  return {
-    proverb: state.proverb,
-    lastLetter: state.letters,
-    win: state.win
-  }
+	return {
+		proverb: state.proverb,
+		lastLetter: state.letters,
+		win: state.win
+	}
 };
 const mapDispatchToProps = { countMistakes, winner, randomProverb };
 
