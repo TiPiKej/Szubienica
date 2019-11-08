@@ -4,13 +4,13 @@
   "homepage": "https://tipikej.github.io/szubienica",
   "private": true,
   "dependencies": {
-    "gh-pages": "",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "gh-pages": "^2.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-icons": "^2.2.7",
-    "react-redux": "^5.0.7",
-    "react-scripts": "2.1.1",
-    "redux": "^4.0.0"
+    "react-redux": "^5.1.2",
+    "react-scripts": "^2.1.1",
+    "redux": "^4.0.4"
   },
   "scripts": {
     "predeploy": "npm run build",
